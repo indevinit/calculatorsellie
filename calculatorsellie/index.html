@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <form id="container">
+      <tr>
+        <td>
+          <input type="text" name="display" id="display" placeholder="0" >
+        </td>
+      </tr>
+
+      <tr class="firstRow"> <!--input 1, 2, 3, + -->
+        <td>
+          <input onclick="calculate('value', 1)" class="buttons" type="button" name="one" value="1">
+        </td>
+
+        <td>
+          <input onclick="calculate('value', 2)" class="buttons" type="button" name="two" value="2">
+        </td>
+
+        <td>
+            <input onclick="calculate('value', 3)" class="buttons" type="button" name="three" value="3">
+        </td>
+
+        <td>
+            <input onclick="calculate('action', '+')" class="buttons sButtons" type="button" name="add" value="+">
+        </td>
+      </tr>
+
+      <tr> <!--input 4, 5, 6, - -->
+        <td>
+            <input onclick="calculate('value', 4)" class="buttons" type="button" name="for" value="4">
+          </td>
+  
+          <td>
+            <input onclick="calculate('value', 5)" class="buttons" type="button" name="five" value="5">
+          </td>
+  
+          <td>
+              <input onclick="calculate('value', 6)" class="buttons" type="button" name="six" value="6">
+          </td>
+  
+          <td>
+              <input onclick="calculate('action', '-')" class="buttons sButtons" type="button" name="substract" value="-">
+          </td>
+      </tr>
+
+      <tr> <!--input 7, 8, 9, * -->
+        <td>
+            <input onclick="calculate('value', 7)" class="buttons" type="button" name="seven" value="7">
+          </td>
+  
+          <td>
+            <input onclick="calculate('value', 8)" class="buttons" type="button" name="eight" value="8">
+          </td>
+  
+          <td>
+              <input onclick="calculate('value', 9)" class="buttons" type="button" name=nine" value="9">
+          </td>
+  
+          <td>
+              <input onclick="calculate('action', '*')" class="buttons sButtons" type="button" name="multiply" value="*">
+          </td>
+      </tr>
+
+      <tr> <!--input 00 , 0, ., / -->
+          <td>
+              <input onclick="calculate('value', '00')" class="buttons" type="button" name="double-zero" value="00">
+            </td>
+    
+            <td>
+              <input onclick="calculate('value', 0)" class="buttons" type="button" name="zero" value="0">
+            </td>
+    
+            <td>
+                <input onclick="calculate('action', '.')" class="buttons sButtons" type="button" name="dot" value=".">
+            </td>
+    
+            <td>
+                <input onclick="calculate('action', '/')" class="buttons sButtons" type="button" name="divide" value="/">
+            </td>
+      </tr>
+
+      <tr> <!--input C , = -->
+        <td>
+            <input onclick="calculate('action', 'c')" class="buttons sButtons c" type="button" name="clear" value="c">
+          </td>
+  
+          <td>
+              <input onclick="calculate('action', '=')" class="buttons sButtons equal" type="button" name="equal" value="=">
+          </td>
+      </tr>
+
+    </form>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
